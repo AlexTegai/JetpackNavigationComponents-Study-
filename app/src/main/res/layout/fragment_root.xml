@@ -7,17 +7,17 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/openLagoonBoxButton"
+        android:id="@+id/openGreenBoxButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/lagoon"
-        android:text="@string/lagoon_box" />
+        android:text="@string/green_box" />
 
     <Button
-        android:id="@+id/openSandBoxButton"
+        android:id="@+id/openYellowBoxButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/sand"
-        android:text="@string/send_box" />
+        android:text="@string/yellow_box" />
 
 </LinearLayout>

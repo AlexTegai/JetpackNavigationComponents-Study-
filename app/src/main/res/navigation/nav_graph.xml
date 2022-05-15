@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -8,18 +9,24 @@
     <fragment
         android:id="@+id/boxFragment"
         android:name="com.example.graphcomponents.screens.BoxFragment"
-        android:label="BoxFragment"
-        tools:layout="@layout/fragment_box" >
+        android:label="{boxName}"
+        tools:layout="@layout/fragment_box">
         <action
             android:id="@+id/action_boxFragment_to_secretFragment"
             app:destination="@id/secretFragment" />
+        <argument
+            android:name="color"
+            app:argType="integer" />
+        <argument
+            android:name="boxName"
+            app:argType="string" />
     </fragment>
 
     <fragment
         android:id="@+id/rootFragment"
         android:name="com.example.graphcomponents.screens.RootFragment"
-        android:label="RootFragment"
-        tools:layout="@layout/fragment_root" >
+        android:label="Root"
+        tools:layout="@layout/fragment_root">
         <action
             android:id="@+id/action_rootFragment_to_boxFragment"
             app:destination="@id/boxFragment" />
@@ -28,6 +35,6 @@
     <fragment
         android:id="@+id/secretFragment"
         android:name="com.example.graphcomponents.screens.SecretFragment"
-        android:label="SecretFragment"
+        android:label="Secret"
         tools:layout="@layout/fragment_secret" />
 </navigation>

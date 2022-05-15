@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GraphComponents</string>
-    <string name="lagoon_box">Lagoon Box</string>
-    <string name="send_box">Send Box</string>
+    <string name="green_box">Green Box</string>
+    <string name="yellow_box">Yellow Box</string>
     <string name="this_is_a_box">This is a Box!</string>
     <string name="go_back">Go Back</string>
     <string name="open_secret">Open Secret</string>
@@ -9,4 +9,5 @@
     <string name="this_is_a_secret_place">This is a secret place</string>
     <string name="close_the_whole_box">Close The Whole Box</string>
     <string name="close_secret">Close Secret</string>
+    <string name="generated_number">"Generated Number: %1$d"</string>
 </resources>
